@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/174/174872.png">
+    <title>Spotify - My Music</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&display=swap" rel="stylesheet">
+     
+    <script src="https://kit.fontawesome.com/6393227466.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="down.css">
+    <link rel="stylesheet" href="aside.css">
+  
+</head>
+<body>
+    <main>
+        <div class="content__left">
+            <div class="left__secciones">
+                <div class="secciones__logotipo" data-title="Spotify">
+                    <i class="fab fa-spotify logotipo__logo"></i>
+                    <span class="logotipo__titulo">Spotify</span>
+                </div>
+                <ul class="secciones__home">
+                    <li class="home__articulos">
+                        <img src="svg/home.svg" alt="Icono home" 
+                        class="home__imagen">
+                        <p class="home__texto">Inicio</p>
+                    </li>
+                    <li class="home__articulos">
+                        <img src="svg/buscar.svg" alt="Icono buscar" class="home__imagen">
+                        <p class="home__texto">Buscar</p>
+                    </li>
+                    <li class="home__articulos">
+                        <img src="svg/libreria.svg" alt="Icono librería" 
+                        class="home__imagen">
+                        <p class="home__texto">Tu Biblioteca</p>
+                    </li>
+                </ul>
+                <ul class="secciones__likes">
+                    <li class="likes__articulos">
+                        <img src="svg/plus.svg" alt="Icono más" 
+                        class="likes__imagen likes__imagen--blanco">
+                        <p class="likes__texto">Crear lista</p>
+                    </li>
+                    <li class="likes__articulos">
+                        <img src="svg/heart2.svg" alt="Icono corazón" 
+                        class="likes__imagen likes__imagen--degradado">
+                        <p class="likes__texto">Canciones que te gustaron</p>
+                    </li>
+                </ul>
+                <ul class="secciones__playlist">
+                    <li class="playlist__linea">   
+                    </li>
+                    <li class="playlist__music">
+                        <p class="playlist__texto">My music</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="left__descargar">
+                <div class="descargar__contenido">
+                    <img src="svg/descargar.svg" alt="Icono instalar aplicación" 
+                    class="descargar__imagen">
+                    <p class="descargar__texto">Instalar App</p>
+                </div>
+            </div>
+        </div>
+        <div class="content__section">
+            <div class="section__card">
+                <div class="card__iconos">
+                    <div class="card__navegacion">
+                        <img src="svg/flecha__izquierda.svg" alt="Icono flecha izquierda" 
+                        class="card__flecha">
+                        <img src="svg/flecha__derecha.svg" alt="Icono flecha derecha" 
+                        class="card__flecha">
+                    </div>
+                    <div class="card__imagen">
+                        <span class="imagen__texto">
+                            <i class="fas fa-pencil-alt imagen__lapiz"></i>
+                            <span class="imagen__foto">Cambiar foto</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="card__informacion">
+                    <div class="informacion__texto">
+                        <p class="informacion__playlist">Playlist</p>
+                        <a href="" class="informacion__link">
+                            <h1 class="informacion__titulo">My Music</h1>
+                        </a>
+                        <p class="informacion__numeros">Usuario
+                            <span class="informacion__numeros--gris"> •  0 "me gusta"  •  10 canciones, más de 24 hr
+                            </span>
+                        </p>
+                    </div>
+                    <div class="informacion__cuenta">
+                        <button class="cuenta__boton">Mejorar tu cuenta</button>
+                        <button class="cuenta__perfil">
+                            <span class="cuenta__imagen">
+                                <img src="imagenes/perfil.jpeg"
+                                 alt="Foto de perfil"
+                                 title="Foto de perfil"
+                                 class="cuenta__foto">
+                            </span>
+                            <span class="cuenta__usuario">Usuario</span>
+                            <i class="fas fa-sort-down cuenta__flecha"></i>
+                        </button>
+                    </div>
+                </div>    
+            </div>
+            <div class="section__contenido">
+                <div class="contenido__parar">
+                    <img src="svg/stop2.svg" alt="Icono parar"
+                    class="parar__icono">
+                    <img src="svg/puntos.svg" alt="Icono tres puntos"
+                    class="parar__puntos">
+                </div>
+                <ul class="contenido__canciones 0 contenido__canciones--informacion">
+                    <li class="canciones__contenedor canciones__numero">
+                        <p class="informacion__numero">#</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <div class="canciones__contenedor canciones__imagen ">
+                            <p>Título</p>
+                        </div>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p class="canciones__titulo"></p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p class="nombre__album">Álbum</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p>Fecha de Incorporación</p>
+                    </li>
+                    <li class="canciones__contenedor canciones__contenedor--reloj">
+                        <img src="svg/watch.svg" alt="imagen reloj" class="canciones__reloj">
+                    </li>
+                </ul>
+                <ul class="contenido__linea">   
+                </ul>
+                <ul class="contenido__canciones 1">
+                    <li class="canciones__contenedor canciones__numero">
+                        <img src="svg/play.svg" alt="imagen play" title="Play song" class="canciones__play">
+                        <p>1</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <div class="canciones__contenedor canciones__imagen ">
+                            <img src="imagenes/earth.webp" 
+                            alt="foto_de_álbum"
+                            title="All 'N ALL"
+                            class="canciones__foto">
+                        </div>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p class="canciones__titulo">Love's Holiday</p>
+                        <p  class="canciones__artista">Earth, Wind & Fire</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p class="nombre__album">All 'N ALL</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p>22 jun 2021</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p>4:22</p>
+                    </li>
+                </ul>
+                <ul class="contenido__canciones 2">
+                    <li class="canciones__contenedor canciones__numero">
+                        <img src="svg/play.svg" alt="imagen play" title="Play song" class="canciones__play">
+                        <p>2</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <div class="canciones__contenedor canciones__imagen ">
+                            <img src="imagenes/childish.webp" 
+                            alt="foto_de_álbum"
+                            title="Awaken, My Love!"
+                            class="canciones__foto">
+                        </div>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p class="canciones__titulo">Redbone</p>
+                        <p  class="canciones__artista">Childish Gambino</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p class="nombre__album">Awaken, My Love!</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p>22 jun 2021</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p>5:26</p>
+                    </li>
+                </ul>
+                <ul class="contenido__canciones 3">
+                    <li class="canciones__contenedor canciones__numero">
+                        <img src="svg/play.svg" alt="imagen play" title="Play song" class="canciones__play">
+                        <p>3</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <div class="canciones__contenedor canciones__imagen ">
+                            <img src="imagenes/teddy.jpg" 
+                            alt="foto_de_álbum"
+                            title="Life is a song worth singing"
+                            class="canciones__foto">
+                        </div>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p class="canciones__titulo">Close the Door</p>
+                        <p  class="canciones__artista">Teddy Pendergrass</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p class="nombre__album">Life is a song worth singing</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p>22 jun 2021</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p>4:56</p>
+                    </li>
+                </ul>
+                <ul class="contenido__canciones 4">
+                    <li class="canciones__contenedor canciones__numero">
+                        <img src="svg/play.svg" alt="imagen play" title="Play song" class="canciones__play">
+                        <p>4</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <div class="canciones__contenedor canciones__imagen ">
+                            <img src="imagenes/grover.jpg" 
+                            alt="foto_de_álbum"
+                            title="Anthology"
+                            class="canciones__foto">
+                        </div>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p class="canciones__titulo">Just the Two of Us</p>
+                        <p class="canciones__artista">Grover Washington, Jr.</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p class="nombre__album">Anthology</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p>22 jun 2021</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p>7:18</p>
+                    </li>
+                </ul>
+                <ul class="contenido__canciones 5 contenido__canciones--pumas">
+                    <li class="canciones__contenedor canciones__numero">
+                        <img src="svg/equalizer.svg" alt="imagen eq" title="Song playing" class="canciones__equalizer">
+                        <img src="svg/play.svg" alt="imagen stop" title="Stop song" class="canciones__stop">
+                    </li>
+                    <li class="canciones__contenedor">
+                        <div class="canciones__contenedor canciones__imagen ">
+                            <img src="imagenes/pumas.jpg" 
+                            alt="foto_de_álbum"
+                            title="Black Pumas"
+                            class="canciones__foto">
+                        </div>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p class="canciones__titulo canciones__titulo--verde">Colors</p>
+                        <p class="canciones__artista">Black Pumas</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p class="nombre__album">Black Pumas</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p>22 jun 2021</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p>4:06</p>
+                    </li>
+                </ul>
+                <ul class="contenido__canciones 6">
+                    <li class="canciones__contenedor canciones__numero">
+                        <img src="svg/play.svg" alt="imagen play" title="Play song" class="canciones__play">
+                        <p>6</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <div class="canciones__contenedor canciones__imagen ">
+                            <img src="imagenes/gwen.jpg" 
+                            alt="foto_de_álbum"
+                            title="On My Way"
+                            class="canciones__foto">
+                        </div>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p class="canciones__titulo">Keep the Fire Burning</p>
+                        <p  class="canciones__artista">Gwen McCrae</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p class="nombre__album">On My Way</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p>22 jun 2021</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p>5:43</p>
+                    </li>
+                </ul>
+                <ul class="contenido__canciones 7">
+                    <li class="canciones__contenedor canciones__numero">
+                        <img src="svg/play.svg" alt="imagen play" title="Play song" class="canciones__play">
+                        <p>7</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <div class="canciones__contenedor canciones__imagen ">
+                            <img src="imagenes/bobby.webp" 
+                            alt="foto_de_álbum"
+                            title="What You Wont't Do for Love"
+                            class="canciones__foto">
+                        </div>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p class="canciones__titulo">What you Won't Do for Love</p>
+                        <p  class="canciones__artista">Bobby Caldwell</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p class="nombre__album">What You Won't Do for Love</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p>22 jun 2021</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p>4:46</p>
+                    </li>
+                </ul>
+                <ul class="contenido__canciones 8">
+                    <li class="canciones__contenedor canciones__numero">
+                        <img src="svg/play.svg" alt="imagen play" title="Play song" class="canciones__play">
+                        <p>8</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <div class="canciones__contenedor canciones__imagen ">
+                            <img src="imagenes/michael.jpg" 
+                            alt="foto_de_álbum"
+                            title="Flashdance"
+                            class="canciones__foto">
+                        </div>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p class="canciones__titulo">Maniac</p>
+                        <p  class="canciones__artista">Michael Sembello</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p class="nombre__album">Flashdance</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p>22 jun 2021</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p>4:04</p>
+                    </li>
+                </ul>
+                <ul class="contenido__canciones 9">
+                    <li class="canciones__contenedor canciones__numero">
+                        <img src="svg/play.svg" alt="imagen play" title="Play song" class="canciones__play">
+                        <p>9</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <div class="canciones__contenedor canciones__imagen ">
+                            <img src="imagenes/luther.jpg" 
+                            alt="foto_de_álbum"
+                            title="Never Too Much"
+                            class="canciones__foto">
+                        </div>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p class="canciones__titulo">Never Too Much</p>
+                        <p  class="canciones__artista">Luther Vandross</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p class="nombre__album">Never Too Much</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p>22 jun 2021</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p>3:50</p>
+                    </li>
+                </ul>
+                <ul class="contenido__canciones 10">
+                    <li class="canciones__contenedor canciones__numero">
+                        <img src="svg/play.svg" alt="imagen play" title="Play song" class="canciones__play">
+                        <p>10</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <div class="canciones__contenedor canciones__imagen ">
+                            <img src="imagenes/weeknd.jpg" 
+                            alt="foto_de_álbum"
+                            title="After Hours"
+                            class="canciones__foto">
+                        </div>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p class="canciones__titulo">Escape From LA</p>
+                        <p  class="canciones__artista">The Weeknd</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p class="nombre__album">After Hours</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p>22 jun 2021</p>
+                    </li>
+                    <li class="canciones__contenedor">
+                        <p>5:55</p>
+                    </li>
+                </ul>
+            </div>
+            </div>     
+        <div class="content__down">
+            <div class="down__cancion">
+                <ul class="cancion__elementos">
+                    <li class="cancion__figura">
+                        <img src="imagenes/pumas.jpg" 
+                        alt="imagen cancion" title="Colors | Black Pumas"
+                        class="cancion__imagen">
+                    </li>
+                    <li class="cancion__texto">
+                        <p class="cancion__titulo">Colors</p>
+                        <p class="cancion__artista">Black Pumas</p>
+                    </li>
+                    <li class="cancion__iconos">
+                        <img src="svg/heart.svg" alt="imagen corazon" 
+                        class="cancion__svg" title="Me gusta">
+                        <img src="svg/music.svg" alt="imagen biblioteca" 
+                        class="cancion__svg" title="Ver biblioteca">
+                    </li>
+                </ul>
+            </div>
+            <div class="down__minuto">
+                <ul class="minuto__elementos">
+                    <li class="minuto__botones">
+                        <img src="svg/random.svg" alt="botón playlist aleatoria" 
+                        class="minuto__iconos" title="Playlist aleatoria">
+                        <img src="svg/previous.svg" alt="botón canción previa"  
+                        class="minuto__iconos" title="Canción previa">
+                        <img src="svg/play2.svg" alt="botón play"  
+                        class="minuto__iconos minuto__play" title="Continuar la canción">
+                        <img src="svg/next.svg" alt="botón siguiente canción"  
+                        class="minuto__iconos" title="Siguiente canción">
+                        <img src="svg/repeat.svg" alt="botón repetir canción"  
+                        class="minuto__iconos " title="Repetir canción">
+                        <div class="minuto__circulo--verde"></div>
+                    </li>
+                    <li class="minuto__tiempo">
+                        <p class="minuto__segundos">1:38</p>
+                        <div class="minuto__barra"></div> 
+                        <div class="minuto__circulo"></div>
+                        <p class="minuto__segundos">4:06</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="down__volumen">
+                <ul class="volumen__elementos">
+                    <li class="volumen__letra volumen__iconos">
+                        <img src="svg/letra.svg" alt="Icono músical" 
+                        title="Letra de la canción">
+                    </li>
+                    <li class="volumen__cola volumen__iconos">
+                        <img src="svg/cola.svg" alt="Icono cola" 
+                        title="Cola">
+                    </li>
+                    <li class="volumen__dispositivos volumen__iconos">
+                        <img src="svg/devices.svg" alt="Icono dispositivos" 
+                        title="Dispositivos conectados">
+                    </li>
+                    <li class="volumen__icono volumen__iconos">
+                        <img src="svg/volumen.svg" alt="Icono volumen" 
+                        title="Ajustar volumen"
+                        class="volumen__simbolo">
+                        <div class="volumen__barra" title="Cambir volumen"></div>
+                        <div class="volumen__circulo" title="Cambiar volumen"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
