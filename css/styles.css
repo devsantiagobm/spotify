@@ -33,6 +33,9 @@ body {
 }
    
 
+.none{
+    display: none;
+}
 /* DERECHA DE LA WEB*/
 
 .content__left{
@@ -449,7 +452,6 @@ body {
     height: auto;
     padding: 0 25px;
     display: grid;
-    background-color: lue;
     grid-template-columns: repeat(20, 1fr);
     grid-template-rows: repeat(1, mimmax(45px, 50px));
     column-gap: 10px;
@@ -783,4 +785,8 @@ body {
 
 .volumen__icono:hover .volumen__barra::before{
     background-color: #1ed760;
+}
+
+.content__phone{
+    display: none;
 }

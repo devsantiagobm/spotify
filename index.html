@@ -22,7 +22,7 @@
 </head>
 <body>
     <main>
-        <div class="content__left">
+        <div class="content__left none576">
             <div class="left__secciones">
                 <div class="secciones__logotipo none885">
                     <i class="fab fa-spotify logotipo__logo"></i>
@@ -79,7 +79,7 @@
                         <img src="svg/flecha__izquierda.svg" alt="Icono flecha izquierda" 
                         class="card__flecha">
                         <img src="svg/flecha__derecha.svg" alt="Icono flecha derecha" 
-                        class="card__flecha">
+                        class="card__flecha none576">
                     </div>
                     <div class="card__imagen">
                         <span class="imagen__texto">
@@ -119,7 +119,7 @@
                     class="parar__puntos">
                 </div>
                 <ul class="section__lista">
-                    <li class="hijos numero">1</li>
+                    <li class="hijos numero none576">1</li>
                     <li class="hijos foto">
                         <img src="imagenes/earth.webp" alt="Imagen del album All 'N All" class="section__imagenes">
                     </li>
@@ -127,10 +127,10 @@
                         <h4>Love's Holiday</h4>
                         <p>Earth Wind & Fire</p>
                     </li>
-                    <li class="hijos album">
+                    <li class="hijos album none576">
                         <h4>All N' All</h4>
                     </li>
-                    <li class="hijos fecha">
+                    <li class="hijos fecha none576">
                         <h4>22 jun 2021</h4>
                     </li>
                     <li class="hijos duracion">
@@ -165,11 +165,13 @@
                         <img src="svg/random.svg" alt="botón playlist aleatoria" 
                         class="minuto__iconos none885" title="Playlist aleatoria">
                         <img src="svg/previous.svg" alt="botón canción previa"  
-                        class="minuto__iconos" title="Canción previa">
+                        class="minuto__iconos none576" title="Canción previa">
                         <img src="svg/play2.svg" alt="botón play"  
-                        class="minuto__iconos minuto__play" title="Continuar la canción">
+                        class="minuto__iconos minuto__play none576" title="Continuar la canción">
+                        <img src="svg/play.svg" alt=""
+                        class="play none">
                         <img src="svg/next.svg" alt="botón siguiente canción"  
-                        class="minuto__iconos" title="Siguiente canción">
+                        class="minuto__iconos none576" title="Siguiente canción">
                         <img src="svg/repeat.svg" alt="botón repetir canción"  
                         class="minuto__iconos none885" title="Repetir canción">
                         <div class="minuto__circulo--verde none885"></div>
@@ -206,6 +208,20 @@
                 </ul>
             </div>
         </div>
+        <ul class="content__phone">
+                <li class="phone__iconos">
+                    <img src="svg/home.svg" alt="">
+                    <p>Home</p>
+                </li>
+                <li class="phone__iconos">
+                    <img src="svg/buscar.svg" alt="">
+                    <p>Buscar</p>
+                </li>
+                <li class="phone__iconos">
+                    <img src="svg/libreria.svg" alt="">
+                    <p>Tu biblioteca</p>
+                </li>
+        </ul>
     </main>
 </body>
 </html>
