@@ -1,0 +1,155 @@
+@media screen and (max-width: 1225px){
+    .none1200{
+        display: none;
+    }
+
+    .section__card{
+        padding: 15px 30px;
+    }
+    .card__iconos{
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width: 992px){
+    .none992{
+        display: none;
+    }
+    .content__left{
+        width: 20%;
+    }
+
+    .content__section{
+        width: 80%;
+    }
+    
+    .section__card{
+        padding: 15px 20px;
+    }
+
+    .card__iconos{
+        width: 35%;
+    }
+
+    .card__informacion{
+        width: 50%;
+    }
+    .minuto__botones{
+        width: 50%;
+    }
+    
+    .minuto__iconos{
+        width: 25px;
+    }
+
+    .minuto__play{
+        width: 35px;
+    }
+
+    .minuto__barra{
+        width: 75%;
+    }
+
+    .volumen__elementos{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 885px){
+    .none885{
+        display: none;
+    }
+
+    .content__left{
+        width: 7.2%;
+    }
+
+    .home__imagen,
+    .likes__imagen{
+        width: 100%;
+    }
+    .content__section{
+        width: 92.8%;
+    }
+
+    .card__informacion{
+        text-align: center;
+    }
+
+    .card__iconos{
+        width: 40%;
+    }
+
+    .card__informacion{
+        width: 60%;
+    }
+    .content__down{
+        padding:10px;
+        align-items: center;
+
+    }
+
+    .cancion__figura{
+        width: 45px;
+        height: 45px;
+        overflow: hidden;
+    }
+
+    .minuto__botones{
+        justify-content: space-around;
+    }
+    .volumen__elementos{
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .none576{
+        display: none;
+    }
+
+    .content__left{
+        width: 100%;
+        height: 60px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        bottom: 0;
+        left: 0;
+        padding: 0;
+        z-index: 10;
+        line-height: 0px;
+    }
+
+    .content__left *{
+        padding: 0;
+        margin: 0;
+    }
+
+    .secciones__home{
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .home__articulos{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 10px 0;
+    }
+    .home__imagen{
+        padding: 0;
+        width: 30px;
+    }
+
+    .content__section{
+        width: 100%;
+        left: 0;
+    }
+    .content__down{
+        bottom: 58px;
+    }
+}
