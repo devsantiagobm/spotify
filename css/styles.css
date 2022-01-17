@@ -50,7 +50,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .left__secciones{
@@ -72,16 +72,10 @@ body {
     cursor: pointer;
     width: 75%;
     justify-content: space-between;
-    background-image: linear-gradient(to bottom right, rgb(252, 73, 50), white);
-    -webkit-background-clip: text;
     color: rgba(255, 255, 255,1);
     transition-property: color;
     transition-duration: .3s;
     transition-timing-function: ease;
-}
-
-.secciones__logotipo:hover{
-    color: rgba(255, 255, 255, 0);
 }
 
 .logotipo__logo{
@@ -407,6 +401,7 @@ body {
     height: auto;
     display: block;
     background-image: linear-gradient(to bottom, rgb(18, 18, 18, .1), transparent);
+    padding: 0 25px;
 }
 
 .contenido__parar{
@@ -447,16 +442,52 @@ body {
     filter: brightness(100%);
 }
 
+.section__lista h4{
+    font-weight: lighter;
+}
 .section__lista{
     width: auto;
     height: auto;
-    padding: 0 25px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px 0px;
     display: grid;
     grid-template-columns: repeat(20, 1fr);
     grid-template-rows: repeat(1, mimmax(45px, 50px));
     column-gap: 10px;
     grid-template-areas: 
     "numero foto nombre nombre nombre nombre nombre nombre album album album album album album fecha fecha fecha duracion duracion duracion";
+    color: var(--coloruno);
+    font-family: var(--fuentedos);
+    font-size: 14px;
+    font-weight: 300;
+    transition: background-color .2s ease;
+    cursor: pointer;
+}
+
+.section__lista:hover{
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.section__play{
+    position: absolute;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.canciones__playing{
+    color: #1ed760;
+}
+
+.section__lista:hover .section__play{
+    opacity: 1;
+}
+
+.section__numero{
+    transition: opacity .2s ease;
+}
+
+.section__lista:hover .section__numero{
+    opacity: 0;
 }
 
 .hijos{
@@ -789,4 +820,243 @@ body {
 
 .content__phone{
     display: none;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1225px){
+    .none1200{
+        display: none;
+    }
+
+    .section__card{
+        padding: 15px 30px;
+    }
+    .card__iconos{
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width: 992px){
+    .none992{
+        display: none;
+    }
+    .content__left{
+        width: 20%;
+    }
+
+    .content__section{
+        width: 80%;
+    }
+    
+    .section__card{
+        padding: 15px 20px;
+    }
+
+    .card__iconos{
+        width: 35%;
+    }
+
+    .card__informacion{
+        width: 50%;
+    }
+    .minuto__botones{
+        width: 50%;
+    }
+    
+    .minuto__iconos{
+        width: 25px;
+    }
+
+    .minuto__play{
+        width: 35px;
+    }
+
+    .minuto__barra{
+        width: 75%;
+    }
+
+    .volumen__elementos{
+        width: 80%;
+    }
+
+    .parar__icono{
+        margin: 0 10px 0 0;
+    }
+}
+
+@media screen and (max-width: 885px){
+    .none885{
+        display: none;
+    }
+
+    .content__left{
+        width: 7.2%;
+    }
+
+    .home__imagen,
+    .likes__imagen{
+        width: 100%;
+    }
+    .content__section{
+        width: 92.8%;
+    }
+
+    .card__informacion{
+        text-align: center;
+    }
+
+    .card__iconos{
+        width: 40%;
+    }
+
+    .card__informacion{
+        width: 60%;
+    }
+    .content__down{
+        padding:10px;
+        align-items: center;
+
+    }
+
+    .cancion__figura{
+        width: 45px;
+        height: 45px;
+        overflow: hidden;
+    }
+
+    .minuto__botones{
+        justify-content: space-around;
+    }
+    .volumen__elementos{
+        justify-content: flex-end;
+    }
+    .informacion__titulo{
+        font-size: 70px;
+    }
+
+}
+
+@media screen and (max-width: 576px){
+    .none576{
+        display: none;
+    }
+
+    .content__section{
+        padding: 0 0 150px 0;
+    }
+    .informacion__titulo{
+        font-size: 60px;
+    }
+
+    .content__phone{
+        position: fixed;
+        background-color: #181818;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;    
+        top: calc(100% - 60px);
+        padding: 10px 0px;
+        font-family: var(--fuenteuno);
+    }
+
+    .content__phone p{
+        font-size: 11px;
+        margin: 3px 0 0 0;
+    }
+
+    .phone__iconos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--coloruno);
+        font-size: 14px;
+        text-align: center;
+        width: 0;
+    }
+
+    .content__section{
+        width: 100%;
+        left: 0;
+    }
+    .content__down{
+        bottom: 60px;
+        border-bottom: solid .5px #333;
+        justify-content: space-between;
+    }
+    .down__minuto{
+        align-items: flex-end;
+    }
+
+    .minuto__botones{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        align-self: flex-end;
+    }
+
+
+    .play{
+        display: block;
+        fill: white;
+        transition: filter .3s ease;
+    }
+    .play:hover{
+        filter: brightness(50%);
+    }
+
+    .cancion__elementos{
+        width: 200%;
+    }
+
+    .section__card{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .card__iconos{
+        width: 100%;
+    }
+
+    .card__informacion{
+        width: 100%;
+        margin: 10px 0 0;
+    }
+
+    .informacion__texto{
+        width: 100%;
+        text-align: center;
+    }
+
+    .card__imagen{
+        width: 50%;
+        margin: auto;
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    .card__flecha{
+        background-color: transparent;
+        border-radius: 50%;
+        padding: 5px;
+        text-align: center;
+        margin-left: 0;
+        cursor: pointer;
+        transition: background-color .3s ease;
+    }
+
+    .card__flecha:hover{
+        background-color: rgba(0, 0, 0, .8);
+    }
+
+    .section__lista{
+        grid-template-areas: 
+        "foto nombre nombre nombre nombre nombre nombre nombre nombre nombre nombre nombre nombre nombre nombre nombre nombre duracion duracion duracion";
+        
+    }
 }
