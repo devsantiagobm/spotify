@@ -957,9 +957,10 @@ body {
         justify-content: space-evenly;
         align-items: center;
         width: 100%;    
-        top: calc(100% - 60px);
+        bottom: 0%;
         padding: 10px 0px;
         font-family: var(--fuenteuno);
+        border-top: solid .5px #333;
     }
 
     .content__phone p{
@@ -983,8 +984,7 @@ body {
         left: 0;
     }
     .content__down{
-        bottom: 60px;
-        border-bottom: solid .5px #333;
+        bottom: 73px;
         justify-content: space-between;
     }
     .down__minuto{
@@ -999,6 +999,9 @@ body {
         align-self: flex-end;
     }
 
+    .section__contenido{
+        background-image: none;
+    }
 
     .play{
         display: block;
@@ -1057,6 +1060,6 @@ body {
     .section__lista{
         grid-template-areas: 
         "foto nombre nombre nombre nombre nombre nombre nombre nombre nombre nombre nombre nombre nombre nombre nombre nombre duracion duracion duracion";
-        
+        padding: 10px;
     }
 }
